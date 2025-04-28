@@ -9,17 +9,18 @@ End-to-end analytics & pricing pipeline for Clays.
 ```
 Clays_LondonLAB_Project/
 ├── data/
-│   ├── raw/          ← original CSV exports & safety parquet copies
-│   └── processed/    ← cleaned, feature-engineered & master dataset
+│   ├── raw/            ← original CSV exports & safety parquet copies
+│   └── processed/      ← cleaned, feature-engineered & master dataset
 ├── code/
-│   ├── ingest/       ← data cleaning & feature engineering pipeline
-│   ├── models/       ← clustering & prediction code
-│   ├── optimize/     ← pricing optimization scripts
-│   └── dashboard/    ← dashboard & reporting code
-├── notebooks/        ← EDA and experiment notebooks
-├── outputs/          ← HTML reports, figures, presentations
+│   ├── 1_ingest/       ← data cleaning & feature engineering pipeline
+│   ├── 2_models/       ← clustering & prediction code
+│   ├── 3_optimize/     ← pricing optimization scripts
+│   └── 4_dashboard/    ← dashboard & reporting code
+├── notebooks/          ← EDA and experiment notebooks
+├── outputs/            ← HTML reports, figures, presentations
 ├── .gitignore
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -27,13 +28,13 @@ Clays_LondonLAB_Project/
 ## 🛠️ Setup
 
 1. **Clone the repository**:
-   ```bash
+   ``` 
    git clone https://github.com/mcarvalhosa/Clays_LondonLAB_Project.git
    cd Clays_LondonLAB_Project
    ```
 
 2. **Create & activate a virtual environment**:
-   ```bash
+   ``` 
    python -m venv .venv
    # Activate the virtualenv:
    # - Windows:
@@ -43,7 +44,7 @@ Clays_LondonLAB_Project/
    ```
 
 3. **Install dependencies**:
-   ```bash
+   ``` 
    pip install -r code/ingest/requirements.txt
    ```
 
@@ -52,12 +53,12 @@ Clays_LondonLAB_Project/
 ## ▶️ Running the Pipeline
 
 1. **Go to the ingest folder**:
-   ```bash
+   ``` 
    cd code/ingest
    ```
 
 2. **Run the cleaning and feature engineering pipeline**:
-   ```bash
+   ``` 
    python run_ingest.py
    ```
 
@@ -76,19 +77,19 @@ Clays_LondonLAB_Project/
 ## 🧮 Git Best Practices
 
 - Always **pull** before starting new work:
-  ```bash
+  ```
   git pull origin main
   ```
 - **Create a new branch** when starting a feature:
-  ```bash
+  ```
   git checkout -b feat/your-feature
   ```
 - **Commit often** with clear, short messages:
-  ```bash
+  ```
   git commit -m "feat: add clustering pipeline"
   ```
 - **Push and open a pull request** for review:
-  ```bash
+  ```
   git push -u origin feat/your-feature
   ```
 
