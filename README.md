@@ -80,17 +80,17 @@ Clays_LondonLAB_Project/
   ```
   git pull origin main
   ```
-- **Create a new branch** when starting a feature:
+- **Add your changes** before committing:
   ```
-  git checkout -b feat/your-feature
+  git add .
   ```
 - **Commit often** with clear, short messages:
   ```
-  git commit -m "feat: add clustering pipeline"
+  git commit -m "what you've done"
   ```
 - **Push and open a pull request** for review:
   ```
-  git push -u origin feat/your-feature
+  git push origin main
   ```
 
 ---
