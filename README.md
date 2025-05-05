@@ -29,7 +29,7 @@ End-to-end analytics & pricing pipeline for Clays.
   ```
 - **Push and open a pull request** for review:
   ```
-  git push origin main
+  git push 
   ```
 
 - **Open a Pull Request on GitHub** to merge into main
