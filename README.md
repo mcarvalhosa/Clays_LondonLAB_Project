@@ -4,6 +4,38 @@ End-to-end analytics & pricing pipeline for Clays.
 
 ---
 
+## 🧮 Git Best Practices
+
+- Before anything, always make sure to **go to the repo folder**:
+  ```
+   cd Clays_LondonLAB_Project
+  ```
+
+- Always **pull** before starting new work to make sure your branch is up to date:
+  ```
+   git checkout main
+   git pull origin main
+   git checkout *your_name/featurename*
+   git merge main  
+
+  ```
+- **Add your changes** before committing:
+  ```
+  git add .
+  ```
+- **Commit often** with clear, short messages:
+  ```
+  git commit -m "what_you_did"
+  ```
+- **Push and open a pull request** for review:
+  ```
+  git push origin main
+  ```
+
+- **Open a Pull Request on GitHub** to merge into main
+
+---
+
 ## 📂 Folder Structure
 
 ```
@@ -15,8 +47,7 @@ Clays_LondonLAB_Project/
 │   ├── 1_ingest/       ← data cleaning & feature engineering pipeline
 │   ├── 2_models/       ← clustering & prediction code
 │   ├── 3_optimize/     ← pricing optimization scripts
-│   └── 4_dashboard/    ← dashboard & reporting code
-├── notebooks/          ← EDA and experiment notebooks
+│   └── final_model/    ← dashboard & reporting code
 ├── outputs/            ← HTML reports, figures, presentations
 ├── .gitignore
 ├── README.md
@@ -47,54 +78,6 @@ Clays_LondonLAB_Project/
    ``` 
    pip install -r code/ingest/requirements.txt
    ```
-
----
-
-## ▶️ Running the Pipeline
-
-1. **Go to the ingest folder**:
-   ``` 
-   cd code/ingest
-   ```
-
-2. **Run the cleaning and feature engineering pipeline**:
-   ``` 
-   python run_ingest.py
-   ```
-
-3. **Outputs** (like the Master Dataset) will be written to:
-   ```
-   data/processed/
-   ```
-
-4. **Reports** (like the Data Quality HTML) will be written to:
-   ```
-   outputs/
-   ```
-
----
-
-## 🧮 Git Best Practices
-
-- Always **pull** before starting new work:
-  ```
-  git pull origin main
-  ```
-- **Add your changes** before committing:
-  ```
-  git add .
-  ```
-- **Commit often** with clear, short messages:
-  ```
-  git commit -m "what you've done"
-  ```
-- **Push and open a pull request** for review:
-  ```
-  git push origin main
-
-  Actually it will be different!
-  
-  ```
 
 ---
 
