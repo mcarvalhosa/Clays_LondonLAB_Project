@@ -15,12 +15,13 @@ End-to-end analytics & pricing pipeline for Clays.
   ```
    git checkout main
    git pull origin main
-   git checkout *your_name/featurename*
+   git checkout *your_name/feature_name*
    git merge main  
 
   ```
 - **Add your changes** before committing:
   ```
+  git checkout *your_name/feature_name*
   git add .
   ```
 - **Commit often** with clear, short messages:
@@ -47,7 +48,7 @@ Clays_LondonLAB_Project/
 │   ├── 1_ingest/       ← data cleaning & feature engineering pipeline
 │   ├── 2_models/       ← clustering & prediction code
 │   ├── 3_optimize/     ← pricing optimization scripts
-│   └── final_model/    ← dashboard & reporting code
+│   └── final_model/    ← final model Clays can run
 ├── outputs/            ← HTML reports, figures, presentations
 ├── .gitignore
 ├── README.md
