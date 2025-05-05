@@ -1,15 +1,20 @@
-# raw & intermediate data
+# Raw & processed data (never commit these!)
 data/
+*.csv
+
+# Reports, figures, presentations
 outputs/
 
-# catch any strays
-*.csv
-*.parquet
-*.html
-
-# python / notebook cruft
-__pycache__/
-*.pyc
+# Jupyter checkpoints
 .ipynb_checkpoints/
-.env
+
+# Python caches & envs
+__pycache__/
+*.py[cod]
 .venv/
+env/
+*.env
+
+# OS cruft
+.DS_Store
+Thumbs.db
