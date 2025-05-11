@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+# Raw & processed data (never commit these!)
+data/raw/
+data/processed/
+
+# Reports, figures, presentations
+outputs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python caches & envs
+__pycache__/
+*.py[cod]
+.venv/
+env/
+*.env
+
+# OS cruft
+.DS_Store
+Thumbs.db
+/data/processed
+
