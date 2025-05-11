@@ -1,6 +1,6 @@
 # Raw & processed data (never commit these!)
-data/
-*.csv
+data/raw/
+data/processed/
 
 # Reports, figures, presentations
 outputs/
@@ -18,3 +18,4 @@ env/
 # OS cruft
 .DS_Store
 Thumbs.db
+/data/processed
